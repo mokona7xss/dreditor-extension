@@ -1,0 +1,15 @@
+{
+  "name": "Dreditor",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Awesomeness for drupal.org.",
+  "permissions": [
+    "http://drupal.org/*",
+    "https://drupal.org/*"
+  ],
+  "content_scripts": [{
+    "matches": ["http://drupal.org/*", "https://drupal.org/*"],
+    "css": ["dreditor.css"],
+    "js": ["jquery.js", "jquery.once.js", "jquery.debug.js", "drupal.js", "dreditor.user.js"]
+  }]
+}
